@@ -1,0 +1,2 @@
+class YearlyExpense < Expense
+end

@@ -1,0 +1,2 @@
+class MonthlyIncome < Income
+end

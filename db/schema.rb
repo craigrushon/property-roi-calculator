@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.2].define(version: 2024_09_16_213334) do
+ActiveRecord::Schema[7.2].define(version: 2024_09_16_221827) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -24,6 +24,15 @@ ActiveRecord::Schema[7.2].define(version: 2024_09_16_213334) do
     t.index ["property_id"], name: "index_expenses_on_property_id"
   end
 
+  create_table "incomes", force: :cascade do |t|
+    t.decimal "amount", null: false
+    t.string "type", null: false
+    t.bigint "property_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["property_id"], name: "index_incomes_on_property_id"
+  end
+
   create_table "properties", force: :cascade do |t|
     t.string "address"
     t.integer "price"
@@ -32,4 +41,5 @@ ActiveRecord::Schema[7.2].define(version: 2024_09_16_213334) do
   end
 
   add_foreign_key "expenses", "properties"
+  add_foreign_key "incomes", "properties"
 end

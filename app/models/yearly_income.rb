@@ -1,0 +1,2 @@
+class YearlyIncome < Income
+end

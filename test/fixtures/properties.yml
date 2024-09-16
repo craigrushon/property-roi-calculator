@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id: 1
+  address: 100 Something Ave
+  price: 250_000
+
+two:
+  id: 2
+  address: 123 Fake St.
+  price: 500_000

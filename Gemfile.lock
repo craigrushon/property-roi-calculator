@@ -99,7 +99,6 @@ GEM
       irb (~> 1.10)
       reline (>= 0.3.8)
     drb (2.2.1)
-    error_highlight (0.6.0)
     erubi (1.13.0)
     faker (3.4.2)
       i18n (>= 1.8.11, < 2)
@@ -286,7 +285,6 @@ DEPENDENCIES
   brakeman
   capybara
   debug
-  error_highlight (>= 0.4.0)
   faker
   importmap-rails
   jbuilder

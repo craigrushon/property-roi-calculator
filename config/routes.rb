@@ -1,10 +1,5 @@
 Rails.application.routes.draw do
-  post "/graphql", to: "graphql#execute"
-
-  if Rails.env.development?
-    mount GraphiQL::Rails::Engine, at: "/graphiql", graphql_path: "/graphql"
-  end
-
+  get "hello_world", to: "hello_world#index"
   resources :properties do
     resources :expenses
     resources :incomes

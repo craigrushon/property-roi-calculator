@@ -1,0 +1,50 @@
+{
+  "packageManager": "npm@10.7.0",
+  "name": "app",
+  "private": true,
+  "version": "0.1.0",
+  "babel": {
+    "presets": [
+      "./node_modules/shakapacker/package/babel/preset.js"
+    ]
+  },
+  "browserslist": [
+    "defaults"
+  ],
+  "dependencies": {
+    "@babel/core": "^7.25.2",
+    "@babel/plugin-transform-runtime": "^7.25.4",
+    "@babel/preset-env": "^7.25.4",
+    "@babel/preset-react": "^7.24.7",
+    "@babel/preset-typescript": "^7.24.7",
+    "@babel/runtime": "^7.25.6",
+    "@types/babel__core": "^7.20.5",
+    "@types/react": "^18.3.9",
+    "@types/react-dom": "^18.3.0",
+    "@types/webpack": "^5.28.5",
+    "babel-loader": "^8.4.1",
+    "babel-plugin-macros": "^3.1.0",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
+    "compression-webpack-plugin": "^9.2.0",
+    "css-loader": "^7.1.2",
+    "css-minimizer-webpack-plugin": "^7.0.0",
+    "mini-css-extract-plugin": "^2.9.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-on-rails": "^14.0.5",
+    "shakapacker": "8.0.2",
+    "style-loader": "^4.0.0",
+    "terser-webpack-plugin": "^5.3.10",
+    "typescript": "^5.6.2",
+    "webpack": "^5.94.0",
+    "webpack-assets-manifest": "^5.2.1",
+    "webpack-cli": "^4.10.0",
+    "webpack-merge": "^5.10.0"
+  },
+  "devDependencies": {
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.15",
+    "fork-ts-checker-webpack-plugin": "^9.0.2",
+    "react-refresh": "^0.14.2",
+    "webpack-dev-server": "^4.15.2"
+  }
+}

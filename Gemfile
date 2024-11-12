@@ -8,7 +8,7 @@ gem "pg", "~> 1.1"
 gem "puma", ">= 5.0"
 
 # Use graphql
-gem "graphql", "~> 2.3"
+gem "graphql", "~> 2.4"
 
 # Add GraphQL IDE
 gem "graphiql-rails"
